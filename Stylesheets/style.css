@@ -36,3 +36,36 @@ section {
 footer,header,nav{
     background-color: aquamarine;
 }
+
+main{
+    /* Modo de colocar los elementos internos en una rejilla */
+    display: grid; 
+
+    /* Separación entre filas */
+    row-gap: 0.5rem; 
+
+    /* Separación entre columnas */
+    column-gap: 0.5rem; 
+
+    /* Nombres de las áreas*/
+    grid-template-areas:    "A A A A A A"
+                            "B B B B B B"
+                            "C C C D D D"
+                            "E E E E E E"
+}
+
+#Informacion-personal{
+    grid-area: A;
+}
+#Educación{
+    grid-area: B;
+}
+#Experiencia{
+    grid-area: C;
+}
+#Habilidades{
+    grid-area: D;
+}
+#Contacto{
+    grid-area: E;
+}
