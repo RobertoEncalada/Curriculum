@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Sorts+Mill+Goudy&display=swap');
+
+* {
+    font-family: 'Sorts Mill Goudy';
+    background-color: white;
+}
+
+
+table{
+    margin: auto;
+    background-color: white;
+    color: #000000;
+}
+
+img{
+    border: 15px solid gray;
+    border-radius: 10px;
+}
+
+section{
+    box-sizing:content-box;
+    margin: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+span{
+    Font-weight: auto;
+}
+
+h1,h2,div#hip_vinculos{
+    border: 15px solid black;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+footer,
+#Informacion-personal,
+#Habilidades,
+#Contacto
+{
+    background-color: white;
+}
+
+main {
+    /* Modo de colocar los elementos internos en una rejilla */
+    display: grid;
+
+    /* Separación entre filas */
+    row-gap: 0.5rem;
+
+    /* Separación entre columnas */
+    column-gap: 0.5rem;
+
+    /* Número de columnas: 6 * 2fr */
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+#hip_vinculos{
+    grid-column: 1/3;
+    grid-row: 1;
+    margin: auto;
+    padding: 0%;
+    word-spacing: 350px;
+}
+
+
+#Informacion-personal {
+    
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#Educación-Elemental {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#Educación-Superior {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#Habilidades {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#Experiencia {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+#Contacto {
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+footer{
+    grid-column: 1/3;
+    grid-row: 5;
+}
