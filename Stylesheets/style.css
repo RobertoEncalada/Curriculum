@@ -1,71 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Sorts+Mill+Goudy&display=swap');
 
 * {
-    font-family: Arial, sans-serif;
+    font-family: 'Sorts Mill Goudy';
+    background-color: white;
 }
 
 
-
-h1,
-h2,
-h3 {
-    font-family: Roboto;
-}
-
-table,iframe{
-    margin: auto; 
-    background-color: #ffffff;
+table{
+    margin: auto;
+    background-color: white;
     color: #000000;
 }
 
-image{
-    border-style: solid;
-    
+img{
+    border: 15px solid gray;
+    border-radius: 10px;
 }
 
-section {
-    box-sizing: border-box;
-    margin: 100px;
+section{
+    box-sizing:content-box;
+    margin: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
     border: 2px solid black;
     padding: 20px;
     background-color: #ffffff;
     color: #000000;
-    
+
 }
 
-footer,header,nav{
-    background-color: aquamarine;
+span{
+    Font-weight: auto;
 }
 
-main{
+h1,h2{
+    border: 15px solid black;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+footer,
+#Informacion-personal,
+#Habilidades,
+#Contacto
+{
+    background-color: white;
+}
+
+main {
     /* Modo de colocar los elementos internos en una rejilla */
-    display: grid; 
+    display: grid;
 
     /* Separación entre filas */
-    row-gap: 0.5rem; 
+    row-gap: 0.5rem;
 
     /* Separación entre columnas */
-    column-gap: 0.5rem; 
+    column-gap: 0.5rem;
 
-    /* Nombres de las áreas*/
-    grid-template-areas:    "A A A A A A"
-                            "B B B B B B"
-                            "C C C D D D"
-                            "E E E E E E"
+    /* Número de columnas: 6 * 2fr */
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
-#Informacion-personal{
-    grid-area: A;
+
+#Informacion-personal {
+    
+    grid-column: 1;
+    grid-row: 1;
 }
-#Educación{
-    grid-area: B;
+
+#Educación-Elemental {
+    grid-column: 2;
+    grid-row: 2;
 }
-#Experiencia{
-    grid-area: C;
+
+#Educación-Superior {
+    grid-column: 2;
+    grid-row: 2;
 }
-#Habilidades{
-    grid-area: D;
+
+#Habilidades {
+    grid-column: 1;
+    grid-row: 2;
 }
-#Contacto{
-    grid-area: E;
+
+#Experiencia {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+#Contacto {
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+footer{
+    grid-column: 1/3;
+    grid-row: 5;
 }
