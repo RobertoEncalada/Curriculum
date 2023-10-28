@@ -19,7 +19,11 @@ table {
 img {
     border: 10px solid double ;
     border-radius: 10px;
-    border-style:hidden;
+    border-style:inherit;
+    margin-top: 30px;
+    margin-right: 3px;
+    margin-left: 3px;
+
 }
 
 section {
