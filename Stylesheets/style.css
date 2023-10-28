@@ -29,7 +29,6 @@ section {
     margin-right: 10px;
     border: 2px solid black;
     padding: 20px;
-    background-color: #ffffff;
     color: #000000;
 
 }
@@ -52,7 +51,6 @@ footer,
 #Informacion-personal,
 #Habilidades{
     width: 275px;
-    background-color: white;
 }
 
 
