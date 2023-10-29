@@ -12,14 +12,14 @@ table {
     color: #000000;
     text-align: center;
     line-height: 40px;
-    outline-style:double;   
+    outline-style: double;
 }
 
 
 img {
-    border: 10px solid double ;
+    border: 10px solid double;
     border-radius: 10px;
-    border-style:outset;
+    border-style: outset;
     margin-top: 30px;
     margin-right: 3px;
     margin-left: 3px;
@@ -42,7 +42,8 @@ span {
 }
 
 h1,
-h2,nav{
+h2,
+nav {
     border: 15px solid peachpuff;
     background-color: peachpuff;
     border-radius: 10px;
@@ -50,7 +51,8 @@ h2,nav{
     text-align: center;
     text-transform: capitalize;
 }
-nav{
+
+nav {
     text-transform: capitalize;
     background-color: white;
     border: white;
@@ -60,7 +62,7 @@ nav{
 
 footer,
 #Informacion-personal,
-#Habilidades{
+#Habilidades {
     width: 275px;
 }
 
@@ -87,17 +89,17 @@ header {
 
 
 
-#Informacion-personal{
+#Informacion-personal {
     grid-column: 1;
     grid-row: 2;
 }
 
-#Habilidades{
+#Habilidades {
     grid-column: 2;
     grid-row: 2/4;
 }
 
-#Educación{
+#Educación {
     grid-column: 2;
     grid-row: 3;
 }
